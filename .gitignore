@@ -8,7 +8,7 @@ dist/
 .angular/
 
 # Environment files (si no quieres subir variables sensibles)
-src/environments/environment*.ts
+# src/environments/environment*.ts
 
 # IDE specific files
 .idea/
