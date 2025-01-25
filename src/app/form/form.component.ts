@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { environment } from '../../environments/environments.prod';
 @Component({
   selector: 'app-form',
   standalone: false,
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })
-export class FormComponent {
+export class FormComponent implements OnInit {
+  formActionUrl?: string;
+
+  ngOnInit(): void {
+    this.formActionUrl = `https://formspree.io/f/${environment.apiKey}`;
+  }
+
 }
