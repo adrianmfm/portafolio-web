@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/portafolio-web",
+            "outputPath": "dist/portafolio-web/browser",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
